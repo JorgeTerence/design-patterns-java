@@ -9,7 +9,7 @@ import java.util.Map;
 public class Agenda {
     // Eager instance of the class
     private static final Agenda INSTANCE = new Agenda();
-    private Map<String, Boolean> dias = new HashMap<>();
+    private final Map<String, Boolean> dias = new HashMap<>();
 
     private Agenda() {
         dias.put("Domingo", true);
